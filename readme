@@ -1,0 +1,6 @@
+备注：1、在vs code中进行本地调试和开启本地服务器，才可以使用jquery.i18n.properties进行国际化进行中英文切换
+        具体方案：
+        （1）在VSCode扩展上装一个插件：Debugger for Chrome
+        （2）在调试文件中添加调试启动文件："file": "${workspaceFolder}/index.html",
+        （3）在终端安装npm install -g live-server，然后运行live-server
+        

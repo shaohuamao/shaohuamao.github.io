@@ -1,0 +1,93 @@
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div id="headrow" class="row">
+            <div class="col-1">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+            </div>
+            <div class="col-1">
+                info@jklonecapital.com
+            </div>
+            <div class="col-4">
+            </div>
+            <div class="col-1" style="justify-content:flex-end;">
+                <a href="https://twitter.com/jkl_one" title="Twitter"><i class="fa fa-twitter fa-lg"
+                        aria-hidden="true"></i></a>
+            </div>
+            <div class="col-1" style="justify-content:flex-end">
+                <a href="https://www.linkedin.com/in/jkl-one-capital-7a3764177/" title="LinkedIn"><i
+                        class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header" style="margin:0;">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span
+                    class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand" href="index.html" id="title">JKL ONE CAPITAL</a>
+        </div>
+        <!-- <span class="navbar-header"></span> -->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li> <a href="index.html" id="li-Index"></a></li>
+                <!-- <li> <a href="team.html" id="li-Team"></a></li> -->
+                <li> <a href="about.html" id="li-About"></a></li>
+                <li> <a href="contact.html" id="li-Contact"></a></li>
+                <li> <a href="joinus.html" id="li-Joinus"></a></li>
+                <li class="dropdown selectLanguage" id="selectLanguageList">
+                    <a class="dropdown-toggle" style="background: transparent;color:white;" data-toggle="dropdown"
+                        href="javascript:void(0);" id="li-Language">
+                    </a>
+                    <ul class="dropdown-menu">      
+                        <li><a style="margin-top:-20px;" href="javascript:void(0);" onclick="selectEN()"
+                                id="li-Language-en"></a></li>
+                        <li><a href="javascript:void(0);" onclick="selectDE()" id="li-Language-de"></a></li>
+                        <li><a href="javascript:void(0);" onclick="selectZH()" id="li-Language-zh"></a></li>
+                    </ul>  
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<script>
+    $(function () {
+        let li = document.getElementById('selectLanguageList');
+        li.addEventListener('click', function (e) {
+            if ($(this).hasClass("selected")) {
+                $(this).toggleClass("selected");
+            } else {
+                $(this).toggleClass("selected");
+                $(this).toggleClass("open");
+                if ($(this).hasClass("open")) {
+                    $(this).toggleClass("open"); 
+                }
+            }
+        })
+    })
+
+</script>
+<!-- jQuery -->
+<!-- <script src="../js/jquery.js"></script> -->
+
+<!-- Bootstrap Core JavaScript -->
+<!-- <script src="js/bootstrap.min.js"></script> -->
+
+<!-- Plugin JavaScript -->
+<!-- <script src="js/jquery.easing.min.js"></script>  -->
+<script src="../js/classie.js"></script>
+<script src="../js/cbpAnimatedHeader.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<!-- <script src="js/five.js"></script> -->
+
+<!-- jQuery i18n -->
+<script src="../js/jquery.i18n.properties.js"></script>
+
+<!-- jQuery international -->
+<script src="../js/international.js"></script>
+<script src="../js/cookie.js"></script>
